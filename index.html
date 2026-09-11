@@ -3,18 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>PLATAFORMA FINAL FUNCIONAL</title>
-
+  <title>PLATAFORMA PARA APLICAR POVAS</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="./scripts.js" defer></script>
 </head>
 
 <body>
   <div class="container">
-    <h1>🏫 Plataforma Completa</h1>
+    <h1>Provas BM</h1>
 
     <div id="loginDiv" class="card">
       <input id="email" placeholder="Email">
@@ -39,8 +40,8 @@
       <input id="correta" placeholder="Correta (A/B/C/D)">
       <button id="btnAddPergunta">Adicionar Pergunta</button>
 
-      <h3>📊 Respostas dos Alunos</h3>
-      <button id="btnExcel">📥 Exportar Excel</button>
+      <h3> Respostas dos Alunos</h3>
+      <button id="btnExcel"> Exportar Excel</button>
       <canvas id="grafico"></canvas>
       <div id="respostas"></div>
     </div>
@@ -57,6 +58,7 @@
     </div>
 
   </div>
+
 </body>
 
 </html>
